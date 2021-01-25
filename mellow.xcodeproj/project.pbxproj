@@ -15,6 +15,7 @@
 		972DCBC125BE574A00372920 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 972DCBC025BE574A00372920 /* Preview Assets.xcassets */; };
 		972DCBCC25BE574A00372920 /* mellowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972DCBCB25BE574A00372920 /* mellowTests.swift */; };
 		972DCBD725BE574A00372920 /* mellowUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972DCBD625BE574A00372920 /* mellowUITests.swift */; };
+		97E2632F25BE942B00A704C4 /* BottomSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E2632E25BE942B00A704C4 /* BottomSheetView.swift */; };
 		97E45D5825BE643E00B67E33 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E45D5725BE643E00B67E33 /* MapView.swift */; };
 		B043C92BA2744348DDA0A7D4 /* Pods_mellowTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED84F5468B81C6C82D4272D1 /* Pods_mellowTests.framework */; };
 /* End PBXBuildFile section */
@@ -53,6 +54,7 @@
 		972DCBD225BE574A00372920 /* mellowUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mellowUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		972DCBD625BE574A00372920 /* mellowUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mellowUITests.swift; sourceTree = "<group>"; };
 		972DCBD825BE574A00372920 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		97E2632E25BE942B00A704C4 /* BottomSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetView.swift; sourceTree = "<group>"; };
 		97E45D5725BE643E00B67E33 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		B5B5CD266390B22F9C2563FB /* Pods-mellow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mellow.debug.xcconfig"; path = "Target Support Files/Pods-mellow/Pods-mellow.debug.xcconfig"; sourceTree = "<group>"; };
 		B8D52388044D34301D844FE7 /* Pods-mellowTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mellowTests.release.xcconfig"; path = "Target Support Files/Pods-mellowTests/Pods-mellowTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -137,9 +139,10 @@
 		972DCBB825BE574A00372920 /* mellow */ = {
 			isa = PBXGroup;
 			children = (
-				972DCBB925BE574A00372920 /* mellowApp.swift */,
 				972DCBBB25BE574A00372920 /* ContentView.swift */,
+				972DCBB925BE574A00372920 /* mellowApp.swift */,
 				97E45D5725BE643E00B67E33 /* MapView.swift */,
+				97E2632E25BE942B00A704C4 /* BottomSheetView.swift */,
 				972DCBBD25BE574A00372920 /* Assets.xcassets */,
 				972DCBC225BE574A00372920 /* Info.plist */,
 				972DCBBF25BE574A00372920 /* Preview Content */,
@@ -411,6 +414,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				972DCBBC25BE574A00372920 /* ContentView.swift in Sources */,
+				97E2632F25BE942B00A704C4 /* BottomSheetView.swift in Sources */,
 				97E45D5825BE643E00B67E33 /* MapView.swift in Sources */,
 				972DCBBA25BE574A00372920 /* mellowApp.swift in Sources */,
 			);
