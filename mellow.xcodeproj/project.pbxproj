@@ -3,16 +3,20 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		35C9710C0D0C68AA0CB4B4B1 /* Pods_mellow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56CB219BE67B74C1A09937AE /* Pods_mellow.framework */; };
+		4E9F67235606F46E609CFEB9 /* Pods_mellow_mellowUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2AEDE0DC5AB15B778E64891 /* Pods_mellow_mellowUITests.framework */; };
 		972DCBBA25BE574A00372920 /* mellowApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972DCBB925BE574A00372920 /* mellowApp.swift */; };
 		972DCBBC25BE574A00372920 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972DCBBB25BE574A00372920 /* ContentView.swift */; };
 		972DCBBE25BE574A00372920 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 972DCBBD25BE574A00372920 /* Assets.xcassets */; };
 		972DCBC125BE574A00372920 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 972DCBC025BE574A00372920 /* Preview Assets.xcassets */; };
 		972DCBCC25BE574A00372920 /* mellowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972DCBCB25BE574A00372920 /* mellowTests.swift */; };
 		972DCBD725BE574A00372920 /* mellowUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972DCBD625BE574A00372920 /* mellowUITests.swift */; };
+		97E45D5825BE643E00B67E33 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E45D5725BE643E00B67E33 /* MapView.swift */; };
+		B043C92BA2744348DDA0A7D4 /* Pods_mellowTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED84F5468B81C6C82D4272D1 /* Pods_mellowTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +37,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		40F21391DA0A8763E5D7BFE2 /* Pods-mellowTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mellowTests.debug.xcconfig"; path = "Target Support Files/Pods-mellowTests/Pods-mellowTests.debug.xcconfig"; sourceTree = "<group>"; };
+		56CB219BE67B74C1A09937AE /* Pods_mellow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mellow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E9B070FD3AD51ADFC2AB724 /* Pods-mellow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mellow.release.xcconfig"; path = "Target Support Files/Pods-mellow/Pods-mellow.release.xcconfig"; sourceTree = "<group>"; };
+		8AC468E4DABF6283129D85E2 /* Pods-mellow-mellowUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mellow-mellowUITests.debug.xcconfig"; path = "Target Support Files/Pods-mellow-mellowUITests/Pods-mellow-mellowUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		972DCBB625BE574A00372920 /* mellow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mellow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		972DCBB925BE574A00372920 /* mellowApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mellowApp.swift; sourceTree = "<group>"; };
 		972DCBBB25BE574A00372920 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -45,6 +53,12 @@
 		972DCBD225BE574A00372920 /* mellowUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mellowUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		972DCBD625BE574A00372920 /* mellowUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mellowUITests.swift; sourceTree = "<group>"; };
 		972DCBD825BE574A00372920 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		97E45D5725BE643E00B67E33 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		B5B5CD266390B22F9C2563FB /* Pods-mellow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mellow.debug.xcconfig"; path = "Target Support Files/Pods-mellow/Pods-mellow.debug.xcconfig"; sourceTree = "<group>"; };
+		B8D52388044D34301D844FE7 /* Pods-mellowTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mellowTests.release.xcconfig"; path = "Target Support Files/Pods-mellowTests/Pods-mellowTests.release.xcconfig"; sourceTree = "<group>"; };
+		D91712B0A5B9E3DCD4EF64A1 /* Pods-mellow-mellowUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mellow-mellowUITests.release.xcconfig"; path = "Target Support Files/Pods-mellow-mellowUITests/Pods-mellow-mellowUITests.release.xcconfig"; sourceTree = "<group>"; };
+		ED84F5468B81C6C82D4272D1 /* Pods_mellowTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mellowTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2AEDE0DC5AB15B778E64891 /* Pods_mellow_mellowUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mellow_mellowUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35C9710C0D0C68AA0CB4B4B1 /* Pods_mellow.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B043C92BA2744348DDA0A7D4 /* Pods_mellowTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,12 +82,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E9F67235606F46E609CFEB9 /* Pods_mellow_mellowUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		340DEBD77750C911689F97A2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				56CB219BE67B74C1A09937AE /* Pods_mellow.framework */,
+				F2AEDE0DC5AB15B778E64891 /* Pods_mellow_mellowUITests.framework */,
+				ED84F5468B81C6C82D4272D1 /* Pods_mellowTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3B6992FD7C6473B18520AA88 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B5B5CD266390B22F9C2563FB /* Pods-mellow.debug.xcconfig */,
+				7E9B070FD3AD51ADFC2AB724 /* Pods-mellow.release.xcconfig */,
+				8AC468E4DABF6283129D85E2 /* Pods-mellow-mellowUITests.debug.xcconfig */,
+				D91712B0A5B9E3DCD4EF64A1 /* Pods-mellow-mellowUITests.release.xcconfig */,
+				40F21391DA0A8763E5D7BFE2 /* Pods-mellowTests.debug.xcconfig */,
+				B8D52388044D34301D844FE7 /* Pods-mellowTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		972DCBAD25BE574900372920 = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +119,8 @@
 				972DCBCA25BE574A00372920 /* mellowTests */,
 				972DCBD525BE574A00372920 /* mellowUITests */,
 				972DCBB725BE574A00372920 /* Products */,
+				3B6992FD7C6473B18520AA88 /* Pods */,
+				340DEBD77750C911689F97A2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,6 +139,7 @@
 			children = (
 				972DCBB925BE574A00372920 /* mellowApp.swift */,
 				972DCBBB25BE574A00372920 /* ContentView.swift */,
+				97E45D5725BE643E00B67E33 /* MapView.swift */,
 				972DCBBD25BE574A00372920 /* Assets.xcassets */,
 				972DCBC225BE574A00372920 /* Info.plist */,
 				972DCBBF25BE574A00372920 /* Preview Content */,
@@ -137,9 +180,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 972DCBDB25BE574A00372920 /* Build configuration list for PBXNativeTarget "mellow" */;
 			buildPhases = (
+				AEAC07FF4F458E0759977A0A /* [CP] Check Pods Manifest.lock */,
 				972DCBB225BE574A00372920 /* Sources */,
 				972DCBB325BE574A00372920 /* Frameworks */,
 				972DCBB425BE574A00372920 /* Resources */,
+				BBFB226E019E69A0C0DA6CB1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -154,6 +199,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 972DCBDE25BE574A00372920 /* Build configuration list for PBXNativeTarget "mellowTests" */;
 			buildPhases = (
+				5540E1E3A8162CC563802995 /* [CP] Check Pods Manifest.lock */,
 				972DCBC325BE574A00372920 /* Sources */,
 				972DCBC425BE574A00372920 /* Frameworks */,
 				972DCBC525BE574A00372920 /* Resources */,
@@ -172,9 +218,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 972DCBE125BE574A00372920 /* Build configuration list for PBXNativeTarget "mellowUITests" */;
 			buildPhases = (
+				E6BE598F8BFE02AFB1883218 /* [CP] Check Pods Manifest.lock */,
 				972DCBCE25BE574A00372920 /* Sources */,
 				972DCBCF25BE574A00372920 /* Frameworks */,
 				972DCBD025BE574A00372920 /* Resources */,
+				EF5EDF060554AA02FA7D221C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -254,12 +302,116 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5540E1E3A8162CC563802995 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-mellowTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AEAC07FF4F458E0759977A0A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-mellow-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BBFB226E019E69A0C0DA6CB1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-mellow/Pods-mellow-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-mellow/Pods-mellow-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-mellow/Pods-mellow-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E6BE598F8BFE02AFB1883218 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-mellow-mellowUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF5EDF060554AA02FA7D221C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-mellow-mellowUITests/Pods-mellow-mellowUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-mellow-mellowUITests/Pods-mellow-mellowUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-mellow-mellowUITests/Pods-mellow-mellowUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		972DCBB225BE574A00372920 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				972DCBBC25BE574A00372920 /* ContentView.swift in Sources */,
+				97E45D5825BE643E00B67E33 /* MapView.swift in Sources */,
 				972DCBBA25BE574A00372920 /* mellowApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -414,6 +566,7 @@
 		};
 		972DCBDC25BE574A00372920 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5B5CD266390B22F9C2563FB /* Pods-mellow.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -436,6 +589,7 @@
 		};
 		972DCBDD25BE574A00372920 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E9B070FD3AD51ADFC2AB724 /* Pods-mellow.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -458,6 +612,7 @@
 		};
 		972DCBDF25BE574A00372920 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 40F21391DA0A8763E5D7BFE2 /* Pods-mellowTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -480,6 +635,7 @@
 		};
 		972DCBE025BE574A00372920 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8D52388044D34301D844FE7 /* Pods-mellowTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -502,6 +658,7 @@
 		};
 		972DCBE225BE574A00372920 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8AC468E4DABF6283129D85E2 /* Pods-mellow-mellowUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -522,6 +679,7 @@
 		};
 		972DCBE325BE574A00372920 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D91712B0A5B9E3DCD4EF64A1 /* Pods-mellow-mellowUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
