@@ -9,7 +9,8 @@ import SwiftUI
 import Mapbox
 
 struct MapView: UIViewRepresentable {
-    private let mapView: MGLMapView = MGLMapView(frame: .zero, styleURL: MGLStyle.streetsStyleURL)
+    private let mapView: MGLMapView = MGLMapView(frame: .zero, styleURL: MGLStyle.satelliteStyleURL
+    )
 
     func makeUIView(context: UIViewRepresentableContext<MapView>) -> MGLMapView {
         return mapView
