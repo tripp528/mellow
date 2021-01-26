@@ -29,10 +29,14 @@ struct MapView: UIViewRepresentable {
         mapView.mapType = .satellite
         mapView.delegate = context.coordinator
         
+        let region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 51.5, longitude: 0.13), latitudinalMeters: 100000, longitudinalMeters: 100000)
+        mapView.region = region
+        
         let annotation = MKPointAnnotation()
         annotation.title = "London"
         annotation.coordinate = CLLocationCoordinate2D(latitude: 51.5, longitude: 0.13)
         mapView.addAnnotation(annotation)
+        
     
         return mapView
     }
@@ -45,6 +49,7 @@ struct MapView: UIViewRepresentable {
 
 struct MapView_Previews: PreviewProvider {
     static var previews: some View {
-        MapView().edgesIgnoringSafeArea(.all)
+        MapView()
+            .edgesIgnoringSafeArea(.all)
     }
 }
