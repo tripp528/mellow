@@ -16,6 +16,7 @@
 		972DCBCC25BE574A00372920 /* mellowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972DCBCB25BE574A00372920 /* mellowTests.swift */; };
 		972DCBD725BE574A00372920 /* mellowUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972DCBD625BE574A00372920 /* mellowUITests.swift */; };
 		97A2055725BFC03E00AA0381 /* BottomSheetWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A2055625BFC03E00AA0381 /* BottomSheetWrapper.swift */; };
+		97A2055F25BFFC6000AA0381 /* BottomSheetContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A2055E25BFFC6000AA0381 /* BottomSheetContentView.swift */; };
 		97E2632F25BE942B00A704C4 /* BottomSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E2632E25BE942B00A704C4 /* BottomSheetView.swift */; };
 		97E2633425BE991500A704C4 /* MapWithSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E2633325BE991500A704C4 /* MapWithSheet.swift */; };
 		97E45D5825BE643E00B67E33 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E45D5725BE643E00B67E33 /* MapView.swift */; };
@@ -57,6 +58,7 @@
 		972DCBD625BE574A00372920 /* mellowUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mellowUITests.swift; sourceTree = "<group>"; };
 		972DCBD825BE574A00372920 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		97A2055625BFC03E00AA0381 /* BottomSheetWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetWrapper.swift; sourceTree = "<group>"; };
+		97A2055E25BFFC6000AA0381 /* BottomSheetContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetContentView.swift; sourceTree = "<group>"; };
 		97E2632E25BE942B00A704C4 /* BottomSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetView.swift; sourceTree = "<group>"; };
 		97E2633325BE991500A704C4 /* MapWithSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapWithSheet.swift; sourceTree = "<group>"; };
 		97E45D5725BE643E00B67E33 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
@@ -146,9 +148,10 @@
 				972DCBBB25BE574A00372920 /* ContentView.swift */,
 				972DCBB925BE574A00372920 /* mellowApp.swift */,
 				97E45D5725BE643E00B67E33 /* MapView.swift */,
+				97A2055E25BFFC6000AA0381 /* BottomSheetContentView.swift */,
 				97E2632E25BE942B00A704C4 /* BottomSheetView.swift */,
-				97E2633325BE991500A704C4 /* MapWithSheet.swift */,
 				97A2055625BFC03E00AA0381 /* BottomSheetWrapper.swift */,
+				97E2633325BE991500A704C4 /* MapWithSheet.swift */,
 				972DCBBD25BE574A00372920 /* Assets.xcassets */,
 				972DCBC225BE574A00372920 /* Info.plist */,
 				972DCBBF25BE574A00372920 /* Preview Content */,
@@ -420,6 +423,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				972DCBBC25BE574A00372920 /* ContentView.swift in Sources */,
+				97A2055F25BFFC6000AA0381 /* BottomSheetContentView.swift in Sources */,
 				97E2632F25BE942B00A704C4 /* BottomSheetView.swift in Sources */,
 				97A2055725BFC03E00AA0381 /* BottomSheetWrapper.swift in Sources */,
 				97E2633425BE991500A704C4 /* MapWithSheet.swift in Sources */,

@@ -10,12 +10,14 @@ import SwiftUI
 struct BottomSheetWrapper: View {
     @State var offset : CGFloat = 0
     
+    let minHeight : CGFloat = 50
+    
     var body: some View {
         /// to read frame height...
-        GeometryReader{reader in
+        GeometryReader { reader in
             VStack {
                 BottomSheet(offset: $offset, value: (-reader.frame(in: .global).height + 150))
-                    .offset(y: reader.frame(in: .global).height - 140)
+                    .offset(y: reader.frame(in: .global).height - self.minHeight)
                     // adding gesture....
                     .offset(y: offset)
                     .gesture(DragGesture().onChanged({ (value) in
