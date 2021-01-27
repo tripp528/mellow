@@ -17,7 +17,7 @@ struct MapWithSheet : View {
                 .edgesIgnoringSafeArea(.top)
             
             BottomSheetWrapper()
-                .ignoresSafeArea(.all, edges: .bottom)
+                .edgesIgnoringSafeArea(.bottom)
         })
     }
 }

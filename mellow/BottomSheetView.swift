@@ -13,8 +13,9 @@ struct BlurView : UIViewRepresentable {
 }
 
 struct BottomSheet : View {
-    @Binding var offset : CGFloat
-    var value : CGFloat
+    // include these if you want to pass on the state  to the child views...?
+    // @Binding var offset : CGFloat
+    // var value : CGFloat
     
     var body: some View {
         VStack {
@@ -29,6 +30,8 @@ struct BottomSheet : View {
             
             // content
             BottomSheetContentView()
+            
+            Spacer()
         }
         // style the whole vstack background and corners 
         .background(BlurView(style: .systemMaterial))
@@ -39,6 +42,7 @@ struct BottomSheet : View {
 
 struct BottomSheet_Previews: PreviewProvider {
     static var previews: some View {
-        BottomSheet(offset: .constant(1000000), value: 2)
+//        BottomSheet(offset: .constant(1000000), value: 2)
+        BottomSheet()
     }
 }

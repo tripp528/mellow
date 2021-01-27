@@ -13,17 +13,18 @@ import SwiftUI
 struct BottomSheetContentView: View {
     var body: some View {
         // list
-        ScrollView(.vertical, showsIndicators: false, content: {
-            LazyVStack(alignment: .leading, spacing: 15, content: {
+        ScrollView(.horizontal, showsIndicators: false, content: {
+            LazyHStack(spacing: 15, content: {
                 ForEach(1...15, id: \.self) { count in
-                    Text("Searched Place")
-                    Divider()
-                        .padding(.top,10)
+                    Rectangle()
+                        .frame(width: 200)
                 }
             })
             .padding()
             .padding(.top)
+            
         })
+        .frame(height: 500)
     }
 }
 
