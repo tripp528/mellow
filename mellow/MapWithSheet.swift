@@ -11,7 +11,7 @@ import MapKit
 struct MapWithSheet : View {
     
     
-    var body: some View{
+    var body: some View {
         ZStack(alignment: Alignment(horizontal: .center, vertical: .bottom), content: {
             MapView()
                 .edgesIgnoringSafeArea(.top)
