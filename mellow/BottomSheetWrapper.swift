@@ -8,86 +8,104 @@
 import SwiftUI
 
 struct BottomSheetWrapper: View {
+    
     @State var offset : CGFloat = 0
     
-    let minHeight : CGFloat = 50
+    let handle_height : CGFloat
+    let content_height : CGFloat
+    let midpoint : CGFloat
+    let top_position_offset : CGFloat
+    let bottom_position_offset : CGFloat = 0
+    
+    
+    init(handle_height : CGFloat = 50,
+         content_height : CGFloat = 300
+         
+         ) {
+        // TODO: take params for these
+        self.handle_height = handle_height
+        self.content_height = content_height
+        midpoint = content_height / 2
+        top_position_offset = -content_height
+        
+        offset = bottom_position_offset
+    }
     
     var body: some View {
-        /// to read frame height...
         GeometryReader { geo in
-            
+            // Y pixel values are greater as you move down!!
             VStack {
+                let screen_height = geo.frame(in: .global).height
+                let total_beginning_offset = screen_height - self.handle_height
+ 
+                // let midpoint = geo.frame(in: .global).midX
                 
-                let midpoint = geo.frame(in: .global).midX
-                let max_height = geo.frame(in: .global).height
+                
                 
                 //BottomSheet(offset: $offset, value: (-reader.frame(in: .global).height + 150))
-                BottomSheet()
-                    .offset(y: geo.frame(in: .global).height - self.minHeight)
-                    // adding gesture....
+                BottomSheet(handle_height: self.handle_height, content_height: self.content_height)
+                    
+                    /*
+                     at the start, we offset the whole sheet down by the height of the screen
+                     then, we offset it back up by the height of the handle
+                     */
+                    .offset(y: total_beginning_offset)
+                    
+                    /*
+                     from here on out, the value of offset will be negative
+                     
+                        0                   = position with just the handle showing
+                        (-content_height)   = position with all content showing
+                     
+                     */
                     .offset(y: offset)
                     .gesture(DragGesture().onChanged({ (value) in
-                        
-                        // get gesture start and distance
                         let gesture_start = value.startLocation.y
-                        let distance_dragged = value.translation.height
-                        print("gesture_start: \(gesture_start)")
-                        print("distance_dragged: \(distance_dragged)")
-                        print("midpoint: \(midpoint)")
-                        print("max_height: \(max_height)")
-                        print("offset: \(offset) \n\n")
                         
-                        withAnimation{
-                            // checking the direction of scroll....
-                            // scrolling upWards....
-                            // using startLocation bcz translation will change when we drag up and down....
-                            
-                            if gesture_start > midpoint {
-                                if distance_dragged < 0 && offset > (-max_height + 150){
-                                    offset = distance_dragged
-                                }
-                            }
-                            
-                            if gesture_start < midpoint {
-                                // if
-                                if distance_dragged > 0 && offset < 0 {
-                                    offset = (-max_height + 150) + distance_dragged
-                                }
-                            }
-                        }
-                        // this is onChanged onEnded. so when the finger is lifted
-                    }).onEnded({ (value) in
+                        /*
+                         all offsets are in relation to the top of the padding of the handle!
+                         */
                         
-                        // get gesture start and distance again. now that gesture is over.
-                        let gesture_start = value.startLocation.y
+                        /*
+                         gesture_start_offset will be 0 at top of handle area when closed
+                         around content_height at top of handle area when open
+                         */
+                        let gesture_start_offset = total_beginning_offset - gesture_start
                         let distance_dragged = value.translation.height
                         
-                        // print out values
-                        print("gesture_start: \(gesture_start)")
-                        print("distance_dragged: \(distance_dragged)")
-                        print("midpoint: \(midpoint)")
-                        print("max_height: \(max_height)")
-                        print("offset: \(offset) \n\n")
+                        // Gesture is happening! Move it with finger - unless above or below top / bottom.
                         
                         withAnimation {
                             
-                            // determine which way to pull the thing - to top or to bottom
-                            
-                            // checking and pulling up the screen...
-                            if gesture_start > midpoint {
-                                if -distance_dragged > midpoint {
-                                    offset = (-max_height + 150)
-                                    return
-                                }
-                                offset = 0
+                            // if started at bottom
+                            if gesture_start_offset < midpoint {
+                                offset = bottom_position_offset + distance_dragged
+                            }
+
+                            // if started at top
+                            if gesture_start_offset >= midpoint {
+                                offset = top_position_offset + distance_dragged
                             }
                             
-                            if gesture_start < midpoint {
-                                if distance_dragged < midpoint {
-                                    offset = (-max_height + 150)
-                                    return
-                                }
-                                offset = 0
+                            // if offset goes more negative than top position
+                            if offset < top_position_offset {
+                                offset = top_position_offset + (distance_dragged / 10)
+                            }
+                            
+                            // if offset gets larger than bottom position
+                            if offset > bottom_position_offset {
+                                offset = bottom_position_offset + (distance_dragged / 10)
+                            }
+                        }
+                        
+                    }).onEnded({ (value) in
+                        
+                        withAnimation {
+                            // Gesture is ended! Snap to top or bottom
+                            if (-offset) > midpoint {
+                                offset = top_position_offset
+                            } else if (-offset) <= midpoint {
+                                offset = bottom_position_offset
                             }
                         }
                     }))

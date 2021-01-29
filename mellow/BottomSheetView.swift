@@ -17,19 +17,23 @@ struct BottomSheet : View {
     // @Binding var offset : CGFloat
     // var value : CGFloat
     
+    let handle_height: CGFloat
+    let content_height: CGFloat
+    
     var body: some View {
         VStack {
             
             // drag handle
             Capsule()
                 .fill(Color.gray.opacity(0.5))
-                // 5 + 20 + 25 = 50px for handle area
-                .frame(width: 50, height: 5)
-                .padding(.top, 20)
-                .padding(.bottom, 25)
+                
+                // pad around so that handle is correct height
+                .frame(width: 50, height: 4)
+                .padding(.top, (handle_height / 2) - 2)
+                .padding(.bottom, (handle_height / 2) - 2)
             
             // content
-            BottomSheetContentView()
+            BottomSheetContentView(height: content_height)
             
             Spacer()
         }
@@ -43,6 +47,6 @@ struct BottomSheet : View {
 struct BottomSheet_Previews: PreviewProvider {
     static var previews: some View {
 //        BottomSheet(offset: .constant(1000000), value: 2)
-        BottomSheet()
+        BottomSheet(handle_height: 50, content_height: 100)
     }
 }

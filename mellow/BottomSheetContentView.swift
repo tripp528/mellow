@@ -11,25 +11,27 @@ import SwiftUI
 
 
 struct BottomSheetContentView: View {
+    
+    let height: CGFloat
+    
     var body: some View {
         // list
         ScrollView(.horizontal, showsIndicators: false, content: {
             LazyHStack(spacing: 15, content: {
                 ForEach(1...15, id: \.self) { count in
-                    Rectangle()
+                    Color(.black)
                         .frame(width: 200)
                 }
             })
-            .padding()
-            .padding(.top)
+            //.padding()
             
         })
-        .frame(height: 500)
+        .frame(height: height)
     }
 }
 
 struct RouteDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        BottomSheetContentView()
+        BottomSheetContentView(height: 100)
     }
 }
