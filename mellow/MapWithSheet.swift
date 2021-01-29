@@ -9,14 +9,15 @@ import SwiftUI
 import MapKit
 
 struct MapWithSheet : View {
-    
+    @State private var selected_annotation : MKAnnotation?
     
     var body: some View {
+        
         ZStack(alignment: Alignment(horizontal: .center, vertical: .bottom), content: {
-            MapView()
+            MapView(selected_annotation: $selected_annotation)
                 .edgesIgnoringSafeArea(.top)
             
-            BottomSheetWrapper()
+            BottomSheetWrapper(selected_annotation: $selected_annotation)
                 .edgesIgnoringSafeArea(.bottom)
         })
     }

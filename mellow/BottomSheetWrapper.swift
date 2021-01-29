@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import MapKit
 
 struct BottomSheetWrapper: View {
     
@@ -17,33 +18,60 @@ struct BottomSheetWrapper: View {
     let top_position_offset : CGFloat
     let bottom_position_offset : CGFloat = 0
     
+    @Binding var selected_annotation : MKAnnotation?
+    
     
     init(handle_height : CGFloat = 50,
-         content_height : CGFloat = 300
-         
-         ) {
-        // TODO: take params for these
+         content_height : CGFloat = 300,
+         selected_annotation : Binding<MKAnnotation?> = .constant(nil)) {
         self.handle_height = handle_height
         self.content_height = content_height
-        midpoint = content_height / 2
-        top_position_offset = -content_height
+        self.midpoint = content_height / 2
+        self.top_position_offset = -content_height
         
-        offset = bottom_position_offset
+        _selected_annotation = selected_annotation
+    }
+    
+    func open() -> Void {
+        self.offset = self.top_position_offset
+    }
+    func close() -> Void {
+        self.offset = self.bottom_position_offset
     }
     
     var body: some View {
         GeometryReader { geo in
+            
+            // testing open & close functions
+//            VStack {
+//                Button(action: {
+//                    withAnimation {
+//                        self.open()
+//                    }
+//                }) {
+//                    Color(.red)
+//                }
+//                Button(action: {
+//                    withAnimation {
+//                        self.close()
+//                    }
+//                }) {
+//                    Color(.green)
+//                }
+//            }
+            
             // Y pixel values are greater as you move down!!
             VStack {
                 let screen_height = geo.frame(in: .global).height
                 let total_beginning_offset = screen_height - self.handle_height
  
-                // let midpoint = geo.frame(in: .global).midX
-                
                 
                 
                 //BottomSheet(offset: $offset, value: (-reader.frame(in: .global).height + 150))
-                BottomSheet(handle_height: self.handle_height, content_height: self.content_height)
+                BottomSheet(handle_height: self.handle_height,
+                            content_height: self.content_height,
+                            selected_annotation: $selected_annotation
+                )
                     
                     /*
                      at the start, we offset the whole sheet down by the height of the screen

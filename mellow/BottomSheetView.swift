@@ -20,6 +20,8 @@ struct BottomSheet : View {
     let handle_height: CGFloat
     let content_height: CGFloat
     
+    @Binding var selected_annotation : MKAnnotation?
+    
     var body: some View {
         VStack {
             
@@ -35,6 +37,9 @@ struct BottomSheet : View {
             // content
             BottomSheetContentView(height: content_height)
             
+            // testing annotation
+            Text("\(Int(selected_annotation?.coordinate.latitude ?? 666))")
+            
             Spacer()
         }
         // style the whole vstack background and corners 
@@ -47,6 +52,6 @@ struct BottomSheet : View {
 struct BottomSheet_Previews: PreviewProvider {
     static var previews: some View {
 //        BottomSheet(offset: .constant(1000000), value: 2)
-        BottomSheet(handle_height: 50, content_height: 100)
+        BottomSheet(handle_height: 50, content_height: 100, selected_annotation: .constant(nil))
     }
 }

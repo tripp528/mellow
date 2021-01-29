@@ -145,15 +145,15 @@
 		972DCBB825BE574A00372920 /* mellow */ = {
 			isa = PBXGroup;
 			children = (
-				972DCBBB25BE574A00372920 /* ContentView.swift */,
-				972DCBB925BE574A00372920 /* mellowApp.swift */,
-				97E45D5725BE643E00B67E33 /* MapView.swift */,
-				97A2055E25BFFC6000AA0381 /* BottomSheetContentView.swift */,
-				97E2632E25BE942B00A704C4 /* BottomSheetView.swift */,
-				97A2055625BFC03E00AA0381 /* BottomSheetWrapper.swift */,
-				97E2633325BE991500A704C4 /* MapWithSheet.swift */,
-				972DCBBD25BE574A00372920 /* Assets.xcassets */,
 				972DCBC225BE574A00372920 /* Info.plist */,
+				972DCBBD25BE574A00372920 /* Assets.xcassets */,
+				972DCBB925BE574A00372920 /* mellowApp.swift */,
+				972DCBBB25BE574A00372920 /* ContentView.swift */,
+				97E2633325BE991500A704C4 /* MapWithSheet.swift */,
+				97E45D5725BE643E00B67E33 /* MapView.swift */,
+				97A2055625BFC03E00AA0381 /* BottomSheetWrapper.swift */,
+				97E2632E25BE942B00A704C4 /* BottomSheetView.swift */,
+				97A2055E25BFFC6000AA0381 /* BottomSheetContentView.swift */,
 				972DCBBF25BE574A00372920 /* Preview Content */,
 			);
 			path = mellow;

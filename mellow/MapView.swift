@@ -11,12 +11,20 @@ import MapKit
 
 struct MapView: UIViewRepresentable {
     
+    @Binding var selected_annotation : MKAnnotation?
+    
     class Coordinator: NSObject, MKMapViewDelegate {
         // delegate of the map. gets notified when any events happen on the map.
         var parent: MapView
 
         init(_ parent: MapView) {
             self.parent = parent
+        }
+        
+        // function to notify when user taps on annotation
+        func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
+            //print("annotation, \(view.annotation)")
+            self.parent.selected_annotation = view.annotation
         }
     }
     
@@ -46,10 +54,10 @@ struct MapView: UIViewRepresentable {
     }
     
 }
-
-struct MapView_Previews: PreviewProvider {
-    static var previews: some View {
-        MapView()
-            .edgesIgnoringSafeArea(.all)
-    }
-}
+//
+//struct MapView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        MapView()
+//            .edgesIgnoringSafeArea(.all)
+//    }
+//}
