@@ -34,11 +34,11 @@ struct BottomSheet : View {
                 .padding(.top, (handle_height / 2) - 2)
                 .padding(.bottom, (handle_height / 2) - 2)
             
-            // content
-            BottomSheetContentView(height: content_height)
-            
             // testing annotation
             Text("\(Int(selected_annotation?.coordinate.latitude ?? 666))")
+            
+            // content
+            BottomSheetContentView(height: content_height)
             
             Spacer()
         }

@@ -26,6 +26,10 @@ struct MapView: UIViewRepresentable {
             //print("annotation, \(view.annotation)")
             self.parent.selected_annotation = view.annotation
         }
+        
+        func mapView(_ mapView: MKMapView, didDeselect view: MKAnnotationView) {
+            self.parent.selected_annotation = nil
+        }
     }
     
     func makeCoordinator() -> Coordinator {

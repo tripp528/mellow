@@ -17,7 +17,7 @@ struct MapWithSheet : View {
             MapView(selected_annotation: $selected_annotation)
                 .edgesIgnoringSafeArea(.top)
             
-            BottomSheetWrapper(selected_annotation: $selected_annotation)
+            BottomSheetWrapper(content_height: 400, selected_annotation: $selected_annotation)
                 .edgesIgnoringSafeArea(.bottom)
         })
     }
