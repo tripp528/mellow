@@ -35,7 +35,7 @@ struct BottomSheet : View {
                 .padding(.bottom, (handle_height / 2) - 2)
             
             // testing annotation
-            Text("\(Int(selected_annotation?.coordinate.latitude ?? 666))")
+//            Text("\(Int(selected_annotation?.coordinate.latitude ?? 666))")
             
             // content
             BottomSheetContentView(height: content_height)
@@ -45,13 +45,13 @@ struct BottomSheet : View {
         // style the whole vstack background and corners 
         .background(BlurView(style: .systemMaterial))
         .cornerRadius(15)
+        .frame(maxWidth: UIScreen.main.bounds.size.width)
     }
 }
 
 
 struct BottomSheet_Previews: PreviewProvider {
     static var previews: some View {
-//        BottomSheet(offset: .constant(1000000), value: 2)
         BottomSheet(handle_height: 50, content_height: 100, selected_annotation: .constant(nil))
     }
 }

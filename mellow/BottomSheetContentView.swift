@@ -29,7 +29,7 @@ struct BottomSheetContentView: View {
 //        .frame(height: height)
         
         HorizontalPagingView(height: height)
-            .gesture(DragGesture())
+            
     }
 }
 
