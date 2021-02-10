@@ -40,7 +40,7 @@ struct BottomSheet : View {
             // content
             BottomSheetContentView(height: content_height)
             
-            Spacer()
+//            Spacer()
         }
         // style the whole vstack background and corners 
         .background(BlurView(style: .systemMaterial))

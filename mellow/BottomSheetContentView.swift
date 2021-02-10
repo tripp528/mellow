@@ -28,7 +28,11 @@ struct BottomSheetContentView: View {
 //        })
 //        .frame(height: height)
         
-        HorizontalPagingView(height: height)
+        let bottom_pad: CGFloat = 32
+        
+        HorizontalPagingView(height: height - bottom_pad)
+        
+        Spacer()
             
     }
 }
