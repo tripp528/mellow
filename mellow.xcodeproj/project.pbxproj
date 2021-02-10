@@ -206,6 +206,8 @@
 			dependencies = (
 			);
 			name = mellow;
+			packageProductDependencies = (
+			);
 			productName = mellow;
 			productReference = 972DCBB625BE574A00372920 /* mellow.app */;
 			productType = "com.apple.product-type.application";
@@ -280,6 +282,8 @@
 				Base,
 			);
 			mainGroup = 972DCBAD25BE574900372920;
+			packageReferences = (
+			);
 			productRefGroup = 972DCBB725BE574A00372920 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
