@@ -17,7 +17,11 @@
 		972DCBD725BE574A00372920 /* mellowUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972DCBD625BE574A00372920 /* mellowUITests.swift */; };
 		9761E68725D45A430066527A /* HorizontalPagingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9761E68625D45A430066527A /* HorizontalPagingView.swift */; };
 		9761E69525D47F230066527A /* BottomSheetWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9761E69425D47F230066527A /* BottomSheetWrapper.swift */; };
+		9787114025DB030D0092FB21 /* BoulderPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9787113F25DB030D0092FB21 /* BoulderPreview.swift */; };
 		97A2055F25BFFC6000AA0381 /* BottomSheetContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A2055E25BFFC6000AA0381 /* BottomSheetContentView.swift */; };
+		97B1D76F25DB22AD008CFFC0 /* BoulderListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1D76E25DB22AD008CFFC0 /* BoulderListView.swift */; };
+		97D392FF25DB0FF400E453CB /* BoulderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D392FE25DB0FF400E453CB /* BoulderModel.swift */; };
+		97D3930725DB145000E453CB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 97D3930625DB145000E453CB /* GoogleService-Info.plist */; };
 		97E2632F25BE942B00A704C4 /* BottomSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E2632E25BE942B00A704C4 /* BottomSheetView.swift */; };
 		97E2633425BE991500A704C4 /* MapWithSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E2633325BE991500A704C4 /* MapWithSheet.swift */; };
 		97E45D5825BE643E00B67E33 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E45D5725BE643E00B67E33 /* MapView.swift */; };
@@ -60,7 +64,11 @@
 		972DCBD825BE574A00372920 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9761E68625D45A430066527A /* HorizontalPagingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalPagingView.swift; sourceTree = "<group>"; };
 		9761E69425D47F230066527A /* BottomSheetWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetWrapper.swift; sourceTree = "<group>"; };
+		9787113F25DB030D0092FB21 /* BoulderPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoulderPreview.swift; sourceTree = "<group>"; };
 		97A2055E25BFFC6000AA0381 /* BottomSheetContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetContentView.swift; sourceTree = "<group>"; };
+		97B1D76E25DB22AD008CFFC0 /* BoulderListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoulderListView.swift; sourceTree = "<group>"; };
+		97D392FE25DB0FF400E453CB /* BoulderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoulderModel.swift; sourceTree = "<group>"; };
+		97D3930625DB145000E453CB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		97E2632E25BE942B00A704C4 /* BottomSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetView.swift; sourceTree = "<group>"; };
 		97E2633325BE991500A704C4 /* MapWithSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapWithSheet.swift; sourceTree = "<group>"; };
 		97E45D5725BE643E00B67E33 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
@@ -148,15 +156,13 @@
 			isa = PBXGroup;
 			children = (
 				972DCBC225BE574A00372920 /* Info.plist */,
+				97D3930625DB145000E453CB /* GoogleService-Info.plist */,
 				972DCBBD25BE574A00372920 /* Assets.xcassets */,
 				972DCBB925BE574A00372920 /* mellowApp.swift */,
 				972DCBBB25BE574A00372920 /* ContentView.swift */,
-				97E2633325BE991500A704C4 /* MapWithSheet.swift */,
-				97E45D5725BE643E00B67E33 /* MapView.swift */,
-				9761E69425D47F230066527A /* BottomSheetWrapper.swift */,
-				97E2632E25BE942B00A704C4 /* BottomSheetView.swift */,
-				97A2055E25BFFC6000AA0381 /* BottomSheetContentView.swift */,
-				9761E68625D45A430066527A /* HorizontalPagingView.swift */,
+				97B1D76A25DB16D2008CFFC0 /* Views */,
+				97B1D78A25DB24DA008CFFC0 /* ViewModels */,
+				97D392FD25DB0FE000E453CB /* Model */,
 				972DCBBF25BE574A00372920 /* Preview Content */,
 			);
 			path = mellow;
@@ -188,6 +194,36 @@
 			path = mellowUITests;
 			sourceTree = "<group>";
 		};
+		97B1D76A25DB16D2008CFFC0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				97E2633325BE991500A704C4 /* MapWithSheet.swift */,
+				97E45D5725BE643E00B67E33 /* MapView.swift */,
+				9761E69425D47F230066527A /* BottomSheetWrapper.swift */,
+				97E2632E25BE942B00A704C4 /* BottomSheetView.swift */,
+				97A2055E25BFFC6000AA0381 /* BottomSheetContentView.swift */,
+				9761E68625D45A430066527A /* HorizontalPagingView.swift */,
+				9787113F25DB030D0092FB21 /* BoulderPreview.swift */,
+				97B1D76E25DB22AD008CFFC0 /* BoulderListView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		97B1D78A25DB24DA008CFFC0 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		97D392FD25DB0FE000E453CB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				97D392FE25DB0FF400E453CB /* BoulderModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -199,15 +235,13 @@
 				972DCBB225BE574A00372920 /* Sources */,
 				972DCBB325BE574A00372920 /* Frameworks */,
 				972DCBB425BE574A00372920 /* Resources */,
-				BBFB226E019E69A0C0DA6CB1 /* [CP] Embed Pods Frameworks */,
+				5635D380F91AA66565846C7D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = mellow;
-			packageProductDependencies = (
-			);
 			productName = mellow;
 			productReference = 972DCBB625BE574A00372920 /* mellow.app */;
 			productType = "com.apple.product-type.application";
@@ -239,7 +273,7 @@
 				972DCBCE25BE574A00372920 /* Sources */,
 				972DCBCF25BE574A00372920 /* Frameworks */,
 				972DCBD025BE574A00372920 /* Resources */,
-				EF5EDF060554AA02FA7D221C /* [CP] Embed Pods Frameworks */,
+				BB0506E7E95A988C7844AAA0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -282,8 +316,6 @@
 				Base,
 			);
 			mainGroup = 972DCBAD25BE574900372920;
-			packageReferences = (
-			);
 			productRefGroup = 972DCBB725BE574A00372920 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -302,6 +334,7 @@
 			files = (
 				972DCBC125BE574A00372920 /* Preview Assets.xcassets in Resources */,
 				972DCBBE25BE574A00372920 /* Assets.xcassets in Resources */,
+				97D3930725DB145000E453CB /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +377,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		5635D380F91AA66565846C7D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-mellow/Pods-mellow-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-mellow/Pods-mellow-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-mellow/Pods-mellow-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		AEAC07FF4F458E0759977A0A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -366,21 +416,21 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		BBFB226E019E69A0C0DA6CB1 /* [CP] Embed Pods Frameworks */ = {
+		BB0506E7E95A988C7844AAA0 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-mellow/Pods-mellow-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-mellow-mellowUITests/Pods-mellow-mellowUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-mellow/Pods-mellow-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-mellow-mellowUITests/Pods-mellow-mellowUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-mellow/Pods-mellow-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-mellow-mellowUITests/Pods-mellow-mellowUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E6BE598F8BFE02AFB1883218 /* [CP] Check Pods Manifest.lock */ = {
@@ -405,23 +455,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		EF5EDF060554AA02FA7D221C /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-mellow-mellowUITests/Pods-mellow-mellowUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-mellow-mellowUITests/Pods-mellow-mellowUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-mellow-mellowUITests/Pods-mellow-mellowUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -431,8 +464,11 @@
 			files = (
 				9761E68725D45A430066527A /* HorizontalPagingView.swift in Sources */,
 				972DCBBC25BE574A00372920 /* ContentView.swift in Sources */,
+				9787114025DB030D0092FB21 /* BoulderPreview.swift in Sources */,
 				97A2055F25BFFC6000AA0381 /* BottomSheetContentView.swift in Sources */,
 				97E2632F25BE942B00A704C4 /* BottomSheetView.swift in Sources */,
+				97B1D76F25DB22AD008CFFC0 /* BoulderListView.swift in Sources */,
+				97D392FF25DB0FF400E453CB /* BoulderModel.swift in Sources */,
 				97E2633425BE991500A704C4 /* MapWithSheet.swift in Sources */,
 				97E45D5825BE643E00B67E33 /* MapView.swift in Sources */,
 				972DCBBA25BE574A00372920 /* mellowApp.swift in Sources */,

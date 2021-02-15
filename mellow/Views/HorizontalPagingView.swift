@@ -10,6 +10,7 @@ import SwiftUI
 struct HorizontalPagingView: View {
     
     // params
+    let image_width: CGFloat = 300
     let height: CGFloat
     let hidden_card_width_showing: CGFloat
     let spacing: CGFloat
@@ -53,16 +54,20 @@ struct HorizontalPagingView: View {
         self.index_offset = CGFloat(self.active_index) * (self.card_width + self.spacing)
     }
     
+    func snap() -> Void {
+        // "snap"
+        withAnimation {
+            self.offset.width = -self.index_offset
+        }
+    }
+    
     
     var body: some View {
         
         HStack (alignment: .center, spacing: spacing) {
             ForEach(1...n_items, id: \.self) { count in
-                ZStack {
-                    Text("\(count)")
-                        .frame(width: card_width, height: height)
-                        .background(Color.blue)
-                }
+                BoulderPreview(width: 300, height: self.height, text: "asdf")
+                    .frame(width: card_width)
             }
         }
         .offset(x: init_offset)
@@ -81,10 +86,7 @@ struct HorizontalPagingView: View {
                     if (val.translation.width > 50) {
                         self.set_active_index(new_index: self.active_index - 1)
                     }
-                    // "snap"
-                    withAnimation {
-                        self.offset.width = -self.index_offset
-                    }
+                    self.snap()
                 }
         )
     }
