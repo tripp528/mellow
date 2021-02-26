@@ -20,7 +20,8 @@
 		9787114025DB030D0092FB21 /* BoulderPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9787113F25DB030D0092FB21 /* BoulderPreview.swift */; };
 		97A2055F25BFFC6000AA0381 /* BottomSheetContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A2055E25BFFC6000AA0381 /* BottomSheetContentView.swift */; };
 		97B1D76F25DB22AD008CFFC0 /* BoulderListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B1D76E25DB22AD008CFFC0 /* BoulderListView.swift */; };
-		97D392FF25DB0FF400E453CB /* BoulderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D392FE25DB0FF400E453CB /* BoulderModel.swift */; };
+		97CDE71325E8B89E0098FF7E /* BouldersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97CDE71225E8B89E0098FF7E /* BouldersViewModel.swift */; };
+		97D392FF25DB0FF400E453CB /* Boulder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D392FE25DB0FF400E453CB /* Boulder.swift */; };
 		97D3930725DB145000E453CB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 97D3930625DB145000E453CB /* GoogleService-Info.plist */; };
 		97E2632F25BE942B00A704C4 /* BottomSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E2632E25BE942B00A704C4 /* BottomSheetView.swift */; };
 		97E2633425BE991500A704C4 /* MapWithSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E2633325BE991500A704C4 /* MapWithSheet.swift */; };
@@ -67,7 +68,8 @@
 		9787113F25DB030D0092FB21 /* BoulderPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoulderPreview.swift; sourceTree = "<group>"; };
 		97A2055E25BFFC6000AA0381 /* BottomSheetContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetContentView.swift; sourceTree = "<group>"; };
 		97B1D76E25DB22AD008CFFC0 /* BoulderListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoulderListView.swift; sourceTree = "<group>"; };
-		97D392FE25DB0FF400E453CB /* BoulderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoulderModel.swift; sourceTree = "<group>"; };
+		97CDE71225E8B89E0098FF7E /* BouldersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BouldersViewModel.swift; sourceTree = "<group>"; };
+		97D392FE25DB0FF400E453CB /* Boulder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Boulder.swift; sourceTree = "<group>"; };
 		97D3930625DB145000E453CB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		97E2632E25BE942B00A704C4 /* BottomSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetView.swift; sourceTree = "<group>"; };
 		97E2633325BE991500A704C4 /* MapWithSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapWithSheet.swift; sourceTree = "<group>"; };
@@ -212,6 +214,7 @@
 		97B1D78A25DB24DA008CFFC0 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				97CDE71225E8B89E0098FF7E /* BouldersViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -219,7 +222,7 @@
 		97D392FD25DB0FE000E453CB /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				97D392FE25DB0FF400E453CB /* BoulderModel.swift */,
+				97D392FE25DB0FF400E453CB /* Boulder.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -468,7 +471,8 @@
 				97A2055F25BFFC6000AA0381 /* BottomSheetContentView.swift in Sources */,
 				97E2632F25BE942B00A704C4 /* BottomSheetView.swift in Sources */,
 				97B1D76F25DB22AD008CFFC0 /* BoulderListView.swift in Sources */,
-				97D392FF25DB0FF400E453CB /* BoulderModel.swift in Sources */,
+				97CDE71325E8B89E0098FF7E /* BouldersViewModel.swift in Sources */,
+				97D392FF25DB0FF400E453CB /* Boulder.swift in Sources */,
 				97E2633425BE991500A704C4 /* MapWithSheet.swift in Sources */,
 				97E45D5825BE643E00B67E33 /* MapView.swift in Sources */,
 				972DCBBA25BE574A00372920 /* mellowApp.swift in Sources */,
