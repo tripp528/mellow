@@ -11,7 +11,6 @@ struct BoulderPreview: View {
     
     let width: CGFloat
     let height: CGFloat
-    
     let text: String
     
     var body: some View {

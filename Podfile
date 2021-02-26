@@ -9,6 +9,7 @@ target 'mellow' do
   #pod 'Mapbox-iOS-SDK', '~> 6.3.0'
   pod 'Firebase/Analytics'
   pod 'Firebase/Firestore'
+  pod 'FirebaseFirestoreSwift'
 
   target 'mellowTests' do
     inherit! :search_paths
